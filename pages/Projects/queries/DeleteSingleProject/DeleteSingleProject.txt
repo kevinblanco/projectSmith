@@ -1,2 +1,2 @@
 DELETE FROM public."projects"
-  WHERE "id" = {{}};
+  WHERE "id" = {{this.params.id}};

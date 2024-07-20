@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM public.\"projects\"\n  WHERE \"id\" = {{}};",
+      "body": "DELETE FROM public.\"projects\"\n  WHERE \"id\" = {{this.params.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
