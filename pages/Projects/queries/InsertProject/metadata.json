@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.\"projects\" (\n\t\"owner\",\n\t\"name\",\n\t\"stakeholders\",\n\t\"overview\",\n\t\"implementation\",\n\t\"intake\")\nVALUES (\n\t'ron@appsmith.com',\n\t'Ron Northcut',\n\t'{\"kevin@appsmith.com\", \"joseph@appsmith.com\"}',\n\t'',\n\t'',\n\t'Testing from Appsmith 1-2-3');",
+      "body": "INSERT INTO public.\"projects\" (\n\t\"owner\",\n\t\"name\",\n\t\"stakeholders\",\n\t\"intake\")\nVALUES (\n\t'{{appsmith.user.email}}',\n\t'{{newProject.formData.name}}',\n\t'{{newProject.formData.stakeholders}}',\n\t'{{newProject.formData.intake}}');",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "ProjectSmith Supabase",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
     "name": "InsertProject",
     "pageId": "Projects",

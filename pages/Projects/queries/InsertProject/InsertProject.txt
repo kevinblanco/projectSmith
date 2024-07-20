@@ -2,13 +2,9 @@ INSERT INTO public."projects" (
 	"owner",
 	"name",
 	"stakeholders",
-	"overview",
-	"implementation",
 	"intake")
 VALUES (
-	'ron@appsmith.com',
-	'Ron Northcut',
-	'{"kevin@appsmith.com", "joseph@appsmith.com"}',
-	'',
-	'',
-	'Testing from Appsmith 1-2-3');
+	'{{appsmith.user.email}}',
+	'{{newProject.formData.name}}',
+	'{{newProject.formData.stakeholders}}',
+	'{{newProject.formData.intake}}');
