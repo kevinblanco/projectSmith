@@ -1,23 +1,24 @@
 {
   "gitSyncId": "669bb8f5f788a72e0d2099c1_8d97005e-21d5-476f-9d42-6815feed3d25",
   "unpublishedPage": {
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 5000,
+          "bottomRow": 760,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "dynamicTriggerPathList": [],
           "leftColumn": 0,
-          "minHeight": 1292,
+          "minHeight": 900,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
-          "rightColumn": 4896,
+          "rightColumn": 1174,
           "snapColumns": 64,
-          "snapRows": 124,
+          "snapRows": 125,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 89,
@@ -26,7 +27,7 @@
         }
       }
     ],
-    "name": "Page1",
-    "slug": "page1"
+    "name": "Projects",
+    "slug": "projects"
   }
 }

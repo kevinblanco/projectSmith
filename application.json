@@ -4,16 +4,26 @@
     "appPositioning": {
       "type": "FIXED"
     },
-    "navigationSetting": {}
+    "navigationSetting": {
+      "colorStyle": "light",
+      "itemStyle": "text",
+      "logoAssetId": "669bd226f788a72e0d209a28",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "stacked",
+      "orientation": "top",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    }
   },
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
   "color": "#CCCCCC",
   "evaluationVersion": 2,
-  "icon": "dollar",
+  "icon": "calender",
   "pages": [
     {
-      "id": "Page1",
+      "id": "Projects",
       "isDefault": true
     }
   ],
@@ -21,6 +31,16 @@
     "appPositioning": {
       "type": "FIXED"
     },
-    "navigationSetting": {}
+    "navigationSetting": {
+      "colorStyle": "light",
+      "itemStyle": "text",
+      "logoAssetId": "669bd226f788a72e0d209a28",
+      "logoConfiguration": "logoAndApplicationTitle",
+      "navStyle": "stacked",
+      "orientation": "top",
+      "position": "static",
+      "showNavbar": true,
+      "showSignIn": true
+    }
   }
 }
