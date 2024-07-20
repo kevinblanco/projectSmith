@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 80,
+  "bottomRow": 94,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -172,8 +172,8 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onSubmit": "{{UpdateSingleProject.run({\n  \"id\": appsmith.store.project.id\n}).then(() => {\n  showAlert('Project Updated', 'success');\n  removeValue('project');\n  SelectProjectsByUser.run();\n});}}",
-  "originalBottomRow": 52,
+  "onSubmit": "{{UpdateSingleProject.run({\n  \"id\": appsmith.store.project.id\n}).then(() => {\n  showAlert('Project Updated', 'success');\n  removeValue('project');\n  SelectProjectsByUser.run();\n  closeModal(EditProjectModal.name);\n});}}",
+  "originalBottomRow": 80,
   "originalTopRow": 5,
   "parentColumnSpace": 8.0126953125,
   "parentId": "jqueu4zey5",

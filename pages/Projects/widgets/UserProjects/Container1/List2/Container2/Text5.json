@@ -37,7 +37,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "overflow": "NONE",
+  "overflow": "TRUNCATE",
   "parentId": "79oew4pycb",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",

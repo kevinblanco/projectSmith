@@ -41,7 +41,7 @@
   "parentId": "815tjgutnk",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 35,
+  "rightColumn": 38,
   "shouldTruncate": false,
   "text": "{{currentItem.name}}",
   "textAlign": "LEFT",
