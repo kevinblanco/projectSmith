@@ -1,0 +1,71 @@
+{
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 101,
+  "bottomRowBeforeCollapse": 4,
+  "counterClosewise": false,
+  "displayName": "Progress",
+  "dynamicBindingPathList": [
+    {
+      "key": "fillColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fillColor": "{{appsmith.theme.colors.primaryColor}}",
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.4427604c19b1a86ffdf81f77957632bd.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isIndeterminate": true,
+  "isLoading": false,
+  "isVisible": "{{getMessages.isLoading}}",
+  "key": "zbckcmbqdq",
+  "leftColumn": 38,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "originalBottomRow": 101,
+  "originalTopRow": 97,
+  "parentColumnSpace": 1.96875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "progress": 50,
+  "progressType": "linear",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 62,
+  "searchTags": [
+    "percent"
+  ],
+  "showResult": false,
+  "steps": 1,
+  "tags": [
+    "Content"
+  ],
+  "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.b99132f26b7fae778b21ebedf9748338.svg",
+  "topRow": 97,
+  "topRowBeforeCollapse": 0,
+  "type": "PROGRESS_WIDGET",
+  "version": 1,
+  "widgetId": "bzvriuae22",
+  "widgetName": "Progress1"
+}
