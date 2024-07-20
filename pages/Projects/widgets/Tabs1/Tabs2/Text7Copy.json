@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 4,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -32,7 +32,7 @@
   "needsErrorInfo": false,
   "overflow": "NONE",
   "parentColumnSpace": 11.53564453125,
-  "parentId": "fpa9l6kr65",
+  "parentId": "7s1wa3pj06",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -41,7 +41,7 @@
   "text": "Reviewers:",
   "textAlign": "LEFT",
   "textColor": "#71717a",
-  "topRow": 13,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
