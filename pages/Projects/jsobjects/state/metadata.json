@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "669bca809c10bf67d9f78c9d_d4e403e7-6306-4de0-a014-2a4c8dfcb032",
+  "id": "Projects_state",
+  "unpublishedCollection": {
+    "name": "state",
+    "pageId": "Projects",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "currentProject",
+        "value": "0"
+      },
+      {
+        "name": "currentTab",
+        "value": "\"list\""
+      },
+      {
+        "name": "projects",
+        "value": "{}"
+      },
+      {
+        "name": "responses",
+        "value": "{}"
+      }
+    ]
+  }
+}

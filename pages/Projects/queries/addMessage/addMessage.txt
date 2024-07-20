@@ -1,8 +1,0 @@
-{{ 
-
-{
-	"role": "user",
-	"content": Input1.text
-}
-
-}}
