@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -13,34 +13,32 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
-  "iconName": "edit",
+  "iconName": "cross",
+  "iconSize": 24,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "y4bwqgvbwb",
-  "leftColumn": 59,
+  "key": "dlv2xxy9gy",
+  "leftColumn": 58,
   "minWidth": 50,
-  "mobileBottomRow": 6,
-  "mobileLeftColumn": 59,
-  "mobileRightColumn": 63,
-  "mobileTopRow": 2,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 58,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(EditProjectModal.name);\nstoreValue('project', currentItem);}}",
-  "parentColumnSpace": 11.53564453125,
-  "parentId": "815tjgutnk",
-  "parentRowSpace": 10,
+  "onClick": "{{closeModal(EditProjectModal.name);}}",
+  "parentId": "jqueu4zey5",
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 63,
-  "topRow": 2,
+  "rightColumn": 64,
+  "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "sq0fkyvknb",
-  "widgetName": "IconButton1"
+  "widgetId": "1jv9576925",
+  "widgetName": "IconButton5"
 }

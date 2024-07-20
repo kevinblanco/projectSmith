@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 52,
+  "bottomRow": 80,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -114,9 +114,6 @@
       "key": "schema.__root_schema__.cellBorderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.name.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.name.accentColor"
     },
     {
@@ -145,14 +142,16 @@
     },
     {
       "key": "schema.__root_schema__.children.stakeholders.cellBorderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.name.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.stakeholders.defaultValue"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "sourceData"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
@@ -164,7 +163,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "3tb8pvyieh",
-  "leftColumn": 1,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -173,11 +172,11 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onSubmit": "{{InsertProject.run().then(() => {\n  showAlert('New Project Created', 'success');\n  closeModal(CreateProjectModal.name);\n  SelectProjectsByUser.run();\n});}}",
+  "onSubmit": "{{UpdateSingleProject.run({\n  \"id\": appsmith.store.project.id\n}).then(() => {\n  showAlert('Project Updated', 'success');\n  removeValue('project');\n  SelectProjectsByUser.run();\n});}}",
   "originalBottomRow": 52,
   "originalTopRow": 5,
   "parentColumnSpace": 8.0126953125,
-  "parentId": "tiqs91kjpo",
+  "parentId": "jqueu4zey5",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetButtonLabel": "Reset",
@@ -204,7 +203,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.intake))(newProject.sourceData, newProject.formData, newProject.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.project.intake))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
           "fieldType": "Multiline Text Input",
           "iconAlign": "left",
           "identifier": "intake",
@@ -227,7 +226,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.name))(newProject.sourceData, newProject.formData, newProject.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.project.name))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "name",
@@ -274,7 +273,7 @@
             }
           },
           "dataType": "array",
-          "defaultValue": "",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.project.stakeholders))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
           "fieldType": "Array",
           "identifier": "stakeholders",
           "isCollapsible": true,
@@ -316,7 +315,7 @@
   "scrollContents": true,
   "showReset": true,
   "sourceData": "{\n  \"name\": \"\",\n  \"intake\": \"\",\n  \"stakeholders\": []\n}",
-  "submitButtonLabel": "Submit",
+  "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
     "boxShadow": "none",
@@ -328,6 +327,6 @@
   "type": "JSON_FORM_WIDGET",
   "useSourceData": false,
   "version": 1,
-  "widgetId": "c8i1r3ewge",
-  "widgetName": "newProject"
+  "widgetId": "4zq8t4quyc",
+  "widgetName": "editProjectForm"
 }

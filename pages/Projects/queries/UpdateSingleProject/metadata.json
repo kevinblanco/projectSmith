@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "\n",
+      "body": "UPDATE public.\"projects\"\nSET\n\t\"name\" = '{{editProjectForm.formData.name}}',\n\t\"stakeholders\" = '{{editProjectForm.formData.stakeholders}}',\n\t\"intake\" = '{{editProjectForm.formData.intake}}'\nWHERE\n\t\"id\" = '{{this.params.id}}';\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "ProjectSmith Supabase",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
     "name": "UpdateSingleProject",
     "pageId": "Projects",
