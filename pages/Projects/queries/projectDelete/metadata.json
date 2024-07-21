@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "669bca809c10bf67d9f78c9d_0d2c09b5-896a-445e-a6ea-7bab96d00a67",
-  "id": "Projects_UpdateSingleProject",
+  "gitSyncId": "669bca809c10bf67d9f78c9d_4304e707-e94c-42a4-ba97-607faabdad66",
+  "id": "Projects_projectDelete",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.\"projects\"\nSET\n\t\"name\" = '{{editProjectForm.formData.name}}',\n\t\"stakeholders\" = '{{editProjectForm.formData.stakeholders}}',\n\t\"intake\" = '{{editProjectForm.formData.intake}}'\nWHERE\n\t\"id\" = '{{this.params.id}}';\n",
+      "body": "DELETE FROM public.\"projects\"\n  WHERE \"id\" = {{this.params.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "UpdateSingleProject",
+    "name": "projectDelete",
     "pageId": "Projects",
     "userSetOnLoad": false
   }

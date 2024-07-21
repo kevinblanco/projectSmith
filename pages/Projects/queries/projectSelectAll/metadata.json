@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "669bca809c10bf67d9f78c9d_5d14279d-e3a3-4102-bc3c-b647fb7ed62f",
-  "id": "Projects_InsertProject",
+  "gitSyncId": "669bca809c10bf67d9f78c9d_e875414d-721e-4bef-8e85-2fa1de81e5fc",
+  "id": "Projects_projectSelectAll",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.\"projects\" (\n\t\"owner\",\n\t\"name\",\n\t\"stakeholders\",\n\t\"intake\")\nVALUES (\n\t'{{appsmith.user.email}}',\n\t'{{newProject.formData.name}}',\n\t'{{newProject.formData.stakeholders}}',\n\t'{{newProject.formData.intake}}');",
+      "body": "SELECT * \nFROM public.\"projects\"\nWHERE \"owner\" = {{appsmith.user.email}} OR {{appsmith.user.email}} = ANY (stakeholders) ;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "InsertProject",
+    "name": "projectSelectAll",
     "pageId": "Projects",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

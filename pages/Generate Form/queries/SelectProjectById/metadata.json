@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * \nFROM public.\"projects\"\nWHERE id = {{appsmith.URL.queryParams.id}}\n",
+      "body": "SELECT * \nFROM public.\"projects\"\nWHERE id = {{appsmith.store.projectsmith.current.id}}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "SelectProjectById",
     "pageId": "Generate Form",
     "userSetOnLoad": true
