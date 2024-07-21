@@ -33,7 +33,7 @@ export default {
 
 	isValidProject(project) {
 		const userEmail = appsmith.user.email
-		return project.owner === userEmail || project.stakeholders.includes(userEmail)
+		return project.owner === userEmail || (Array.isArray(project.stakeholders) && project.stakeholders.includes(userEmail))
 	},
 
 	saveState() {
