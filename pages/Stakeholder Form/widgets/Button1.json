@@ -14,7 +14,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconAlign": "left",
   "iconName": "step-backward",
   "isDefaultClickDisabled": true,
@@ -29,6 +33,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
+  "onClick": "{{navigateTo('Projects', {}, 'SAME_WINDOW');}}",
   "parentColumnSpace": 12.359375,
   "parentId": "0",
   "parentRowSpace": 10,
