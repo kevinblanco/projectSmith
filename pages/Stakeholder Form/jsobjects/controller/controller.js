@@ -5,8 +5,6 @@ export default {
 
 		const projectId = appsmith.URL.queryParams.project
 		const project = projectId ? this.findProjectById(projectId) : null
-		
-		console.log("PROJECT", project)
 
 		if (project) {
 			this.isValidProject(project) ? this.setCurrent(project) : this.handleInvalidProject()
@@ -16,15 +14,11 @@ export default {
 				? this.saveState()
 			: this.handleInvalidProject()
 		}
-		console.log(state)
 		const responsesOnThisProject = await GetResponsesByProject.run({ project: state.current.id })
 		const userEmail = appsmith.user.email
 		const userHasSubmitted = responsesOnThisProject.some(response => response.email === userEmail)
-		console.log("responses", responsesOnThisProject)
-		console.log("userHasSubmitted", userHasSubmitted)
 
 		if (userHasSubmitted) {
-			console.log("ENTERED THE IF")
 			showModal(AlreadySavedModal.name)
 		}
 

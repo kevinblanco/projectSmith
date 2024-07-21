@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "controller.onLoad",
     "name": "onLoad",
     "pageId": "Stakeholder Form",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }
