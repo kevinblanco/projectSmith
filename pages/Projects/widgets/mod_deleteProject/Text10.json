@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 62,
   "shouldTruncate": false,
-  "text": "Are you completly sure you want to delete the <i><b>{{appsmith.store.project.name}}</b></i> project?",
+  "text": "Are you completly sure you want to delete the <i><b>{{state.current.name}}</b></i> project?",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 7,

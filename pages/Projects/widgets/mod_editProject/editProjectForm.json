@@ -5,7 +5,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 52,
+  "bottomRow": 65,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -135,23 +135,93 @@
       "key": "schema.__root_schema__.children.stakeholders.borderRadius"
     },
     {
-      "key": "schema.__root_schema__.children.stakeholders.children.__array_item__.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.stakeholders.children.__array_item__.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.stakeholders.cellBorderRadius"
-    },
-    {
       "key": "schema.__root_schema__.children.name.defaultValue"
     },
     {
       "key": "schema.__root_schema__.children.stakeholders.defaultValue"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "schema.__root_schema__.children.id.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.id.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.id.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.created_at.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.created_at.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.created_at.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.owner.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.owner.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.owner.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.form_json.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.form_json.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.form_json.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.overview.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.overview.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.overview.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.implementation.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.implementation.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.implementation.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.tickets.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.tickets.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.tickets.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.status.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.status.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.status.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
@@ -196,6 +266,94 @@
       "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(newProject.sourceData, newProject.formData, newProject.fieldState)}}",
       "cellBoxShadow": "none",
       "children": {
+        "created_at": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "accessor": "created_at",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.created_at))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "created_at",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Created At",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "created_at",
+          "position": 4,
+          "sourceData": ""
+        },
+        "form_json": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "accessor": "form_json",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.form_json))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "form_json",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Form Json",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "form_json",
+          "position": 6,
+          "sourceData": ""
+        },
+        "id": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "accessor": "id",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.id))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "id",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Id",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "id",
+          "position": 3,
+          "sourceData": ""
+        },
+        "implementation": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "accessor": "implementation",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.implementation))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "implementation",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Implementation",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "implementation",
+          "position": 8,
+          "sourceData": ""
+        },
         "intake": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(newProject.sourceData, newProject.formData, newProject.fieldState)}}",
           "accessor": "intake",
@@ -203,7 +361,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.project.intake))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.intake))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
           "fieldType": "Multiline Text Input",
           "iconAlign": "left",
           "identifier": "intake",
@@ -212,7 +370,7 @@
           "isRequired": false,
           "isSpellCheck": false,
           "isVisible": true,
-          "label": "Intake",
+          "label": "Description",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "intake",
           "placeholderText": "Tell us about your project, give all the details as possible as we will use this to generate a project breakdown and contact your stakeholders",
@@ -226,7 +384,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.project.name))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.name))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "name",
@@ -242,50 +400,115 @@
           "position": 0,
           "sourceData": "John"
         },
-        "stakeholders": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(newProject.sourceData, newProject.formData, newProject.fieldState)}}",
-          "accessor": "stakeholders",
-          "backgroundColor": "#FAFAFA",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(newProject.sourceData, newProject.formData, newProject.fieldState)}}",
+        "overview": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "accessor": "overview",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
           "boxShadow": "none",
-          "cellBorderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(newProject.sourceData, newProject.formData, newProject.fieldState)}}",
-          "cellBoxShadow": "none",
-          "children": {
-            "__array_item__": {
-              "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(newProject.sourceData, newProject.formData, newProject.fieldState)}}",
-              "accessor": "__array_item__",
-              "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(newProject.sourceData, newProject.formData, newProject.fieldState)}}",
-              "boxShadow": "none",
-              "children": {},
-              "dataType": "undefined",
-              "fieldType": "Text Input",
-              "iconAlign": "left",
-              "identifier": "__array_item__",
-              "isCustomField": false,
-              "isDisabled": false,
-              "isRequired": false,
-              "isSpellCheck": false,
-              "isVisible": true,
-              "label": "Stakeholder",
-              "labelTextSize": "0.875rem",
-              "originalIdentifier": "__array_item__",
-              "position": -1
-            }
-          },
-          "dataType": "array",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.store.project.stakeholders))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
-          "fieldType": "Array",
-          "identifier": "stakeholders",
-          "isCollapsible": true,
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.overview))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "overview",
           "isCustomField": false,
           "isDisabled": false,
           "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Overview",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "overview",
+          "position": 7,
+          "sourceData": ""
+        },
+        "owner": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "accessor": "owner",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.owner))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "owner",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Owner",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "owner",
+          "position": 5,
+          "sourceData": ""
+        },
+        "stakeholders": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "accessor": "stakeholders",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.stakeholders))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "stakeholders",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
           "label": "Stakeholders",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "stakeholders",
-          "position": 3,
-          "sourceData": []
+          "position": 1,
+          "sourceData": ""
+        },
+        "status": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "accessor": "status",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.status))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "status",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Status",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "status",
+          "position": 10,
+          "sourceData": ""
+        },
+        "tickets": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "accessor": "tickets",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.tickets))(editProjectForm.sourceData, editProjectForm.formData, editProjectForm.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "tickets",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Tickets",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "tickets",
+          "position": 9,
+          "sourceData": ""
         }
       },
       "dataType": "object",
@@ -314,7 +537,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{\n  \"name\": \"\",\n  \"intake\": \"\",\n  \"stakeholders\": []\n}",
+  "sourceData": "{{ state.current }}",
   "submitButtonLabel": "Update",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
