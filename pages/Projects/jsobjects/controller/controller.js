@@ -11,6 +11,7 @@ export default {
 	},
 	isOwner() {
 		// Check if the current email is the same as the owner email
+		
 	},
 	saveState() {
 		storeValue("projectsmith", state)
