@@ -25,6 +25,10 @@
     {
       "id": "Projects",
       "isDefault": true
+    },
+    {
+      "id": "Stakeholder Form",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {
