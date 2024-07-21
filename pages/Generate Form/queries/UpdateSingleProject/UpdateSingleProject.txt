@@ -2,4 +2,4 @@ UPDATE public."projects"
 SET
 	"form_json" = '{{Custom1.model?.formConfig}}'
 WHERE
-	"id" = {{appsmith.store.projectsmith.current.id}};
+	"id" = 1;
