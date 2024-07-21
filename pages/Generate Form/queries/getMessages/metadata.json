@@ -30,7 +30,7 @@
         "key": "path"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "getMessages",
     "name": "getMessages",
     "pageId": "Generate Form",

@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "SelectProjectsByUser",
     "pageId": "Stakeholder Form",
     "userSetOnLoad": false

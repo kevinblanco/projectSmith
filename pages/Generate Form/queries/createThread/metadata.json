@@ -26,7 +26,7 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "createThread",
     "name": "createThread",
     "pageId": "Generate Form",
