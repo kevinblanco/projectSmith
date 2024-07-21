@@ -29,6 +29,22 @@
     {
       "id": "Generate Form",
       "isDefault": false
+    },
+    {
+      "id": "Generate Overview",
+      "isDefault": false
+    },
+    {
+      "id": "Generate Implementation",
+      "isDefault": false
+    },
+    {
+      "id": "Generate Tickets",
+      "isDefault": false
+    },
+    {
+      "id": "Stakeholder Form",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {
