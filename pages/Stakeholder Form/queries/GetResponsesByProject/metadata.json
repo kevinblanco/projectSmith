@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM  public.\"responses\"\nWHERE project = {{appsmith.store.projectsmith.current.id}};\n",
+      "body": "SELECT * FROM  public.\"responses\"\nWHERE project = {{this.params.project}};\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

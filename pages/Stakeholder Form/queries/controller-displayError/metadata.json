@@ -1,6 +1,6 @@
 {
   "gitSyncId": "669d15f49c10bf67d9f78ead_bbfaae39-ac72-47bb-83e6-8abb2560bce9",
-  "id": "Stakeholder Form_controller.redirectToProjectsPage",
+  "id": "Stakeholder Form_controller.displayError",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "controller.redirectToProjectsPage",
-    "name": "redirectToProjectsPage",
+    "fullyQualifiedName": "controller.displayError",
+    "name": "displayError",
     "pageId": "Stakeholder Form",
     "userSetOnLoad": false
   }

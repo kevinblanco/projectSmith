@@ -10,22 +10,23 @@ export default {
 			this.isValidProject(project) ? this.setCurrent(project) : this.handleInvalidProject()
 		} else {
 			this.loadState()
-
 			state.current && this.isValidProject(state.current)
 				? this.saveState()
 			: this.handleInvalidProject()
 		}
-		
+		console.log(state)
 		const responsesOnThisProject = await GetResponsesByProject.run({ project: state.current.id })
 		const userEmail = appsmith.user.email
 		const userHasSubmitted = responsesOnThisProject.some(response => response.email === userEmail)
+		console.log("responses on this project", responsesOnThisProject)
+		console.log("userhas submited?", userHasSubmitted)
 
 		if (userHasSubmitted) {
 			showModal(AlreadySavedModal.name)
 		}
-		
+
 	},
-	
+
 	findProjectById(projectId) {
 		return state.projects.find(proj => proj.id == projectId)
 	},
@@ -62,10 +63,10 @@ export default {
 
 	handleInvalidProject() {
 		console.error("User is not authorized for this project or project not found")
-		this.redirectToProjectsPage()
+		this.displayError()
 	},
 
-	redirectToProjectsPage() {
-		//navigateTo('Projects')  // Adjust the navigation based on your app's configuration
+	displayError() {
+		showModal(ErrorModal.name)
 	}
 }
