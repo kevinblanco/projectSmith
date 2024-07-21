@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
+  "bottomRow": 19,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -43,8 +43,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onClick": "{{addMessage.run().then(() => {\n  createRun.run().then(() => {\n    JSObject1.checkMessages();\n  });\n});}}",
-  "originalBottomRow": 24,
-  "originalTopRow": 20,
+  "originalBottomRow": 19,
+  "originalTopRow": 15,
   "parentColumnSpace": 16.953125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -63,7 +63,7 @@
   ],
   "text": "Generate Form with AI",
   "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.a348658e996feaad96cadc30d99374ff.svg",
-  "topRow": 20,
+  "topRow": 15,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "f70921nu60",
