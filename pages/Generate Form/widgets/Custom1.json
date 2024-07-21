@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 91,
+  "bottomRow": 95,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{\n{ \n\tformConfig: JSObject1.parseMsg(),\n\tlastEdit: 'user'\n}\n}}",
   "displayName": "Custom",
@@ -54,13 +54,13 @@
     "selectionColorCSSVar": "--ads-widget-focus"
   },
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
-  "originalBottomRow": 91,
-  "originalTopRow": 20,
+  "originalBottomRow": 95,
+  "originalTopRow": 24,
   "parentColumnSpace": 14.8125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
-  "rightColumn": 62,
+  "rightColumn": 64,
   "searchTags": [
     "external"
   ],
@@ -75,7 +75,7 @@
   ],
   "theme": "{{appsmith.theme}}",
   "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
-  "topRow": 20,
+  "topRow": 24,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": "html, body {\n    height: 100%;\n\n}\n\nbody {\n    overflow-y: auto; \n    font-family: Arial, sans-serif; \n    line-height: 1.6; \n\t\tmargin: 10px\n}\n\ninput, textarea {\n\tmargin-right: 8px\n}\n\n.help-block{\n\tfont-size: 0.8em;\n\tcolor: #505967\n}\n\n.form-group> label:first-child {\n\tfont-weight: bold\n}\n\n/* Apply flexbox to the parent container of the checkboxes */\n.form-group .controls > div {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px; \n\t\tmargin-bottom: 20px\n}\n\n/* Style individual checkbox containers */\n.form-group .controls .checkbox {\n    flex: 1 1 calc(33.33% - 20px); /* Adjust the width and spacing */\n    box-sizing: border-box; /* Ensure padding and border are included in the width */\n}\n\n/* Adjust the label inside the checkboxes */\n.form-group .controls .checkbox label {\n    display: flex;\n    align-items: center;\n}\n\n",
