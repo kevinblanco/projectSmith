@@ -11,6 +11,17 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "iconName"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "iconName"
+    },
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -18,7 +29,7 @@
       "key": "onClick"
     }
   ],
-  "iconName": "plus",
+  "iconName": "{{controller.buttonIcon()}}",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
@@ -30,7 +41,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 5,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(mod_addProject.name);}}",
+  "onClick": "{{controller.buttonActon()}}",
   "parentColumnSpace": 12.359375,
   "parentId": "0",
   "parentRowSpace": 10,

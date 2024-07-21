@@ -173,7 +173,7 @@
   "mobileRightColumn": 27,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onSubmit": "{{InsertProject.run().then(() => {\n  showAlert('New Project Created', 'success');\n  closeModal(mod_addProject.name);\n  SelectProjectsByUser.run();\n});}}",
+  "onSubmit": "{{projectInsert.run().then(() => {\n  showAlert('New Project Created', 'success');\n  closeModal(mod_addProject.name);\n  projectSelectAll.run();\n});}}",
   "originalBottomRow": 52,
   "originalTopRow": 5,
   "parentColumnSpace": 8.0126953125,

@@ -1,0 +1,8 @@
+UPDATE public."projects"
+SET
+	"name" = '{{form_editProject.formData.name}}',
+	"stakeholders" = '{{form_editProject.formData.stakeholders}}',
+	"intake" = '{{form_editProject.formData.intake}}',
+	"status" = '{{form_editProject.formData.status}}'
+WHERE
+	"id" = '{{form_editProject.formData.id}}';
