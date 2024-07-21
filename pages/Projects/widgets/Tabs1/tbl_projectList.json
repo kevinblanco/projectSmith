@@ -483,7 +483,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
-  "tableData": "{{SelectProjectsByUser.data}}",
+  "tableData": "{{projectSelectAll.data}}",
   "textSize": "0.875rem",
   "topRow": 0,
   "totalRecordsCount": 0,

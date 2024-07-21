@@ -32,7 +32,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{DeleteSingleProject.run({\n  \"id\": appsmith.store.project.id\n}).then(() => {\n  removeValue('project');\n  showAlert('Project Deleted', 'success');\n  closeModal(mod_deleteProject.name);\n  SelectProjectsByUser.run();\n});}}",
+  "onClick": "{{projectDelete.run({\n  \"id\": appsmith.store.project.id\n}).then(() => {\n  removeValue('project');\n  showAlert('Project Deleted', 'success');\n  closeModal(mod_deleteProject.name);\n  projectSelectAll.run();\n});}}",
   "originalBottomRow": 20,
   "originalTopRow": 16,
   "parentId": "351p9fena4",

@@ -51,7 +51,7 @@
   "shouldTruncate": false,
   "text": "{{state.current.status}}",
   "textAlign": "RIGHT",
-  "textColor": "\n{{ \n  controller.getData(\"status\") === 'open' ? '#eab308' : \n controller.getData(\"status\") === 'completo' ? '#22c55e' : \n  'black' \n}}\n",
+  "textColor": "\n{{ \n  state.current.status === 'open' ? '#eab308' : \n state.current.status === 'completo' ? '#22c55e' : \n  'black' \n}}\n",
   "topRow": 3,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

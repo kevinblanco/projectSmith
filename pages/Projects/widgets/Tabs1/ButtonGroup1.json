@@ -29,45 +29,64 @@
       "key": "groupButtons.groupButtonvs5tf3a1be.buttonColor"
     },
     {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "isDisabled"
+      "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtondxt4hjcjuj.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonv9cfgqk0e7.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonvs5tf3a1be.onClick"
+    }
+  ],
   "groupButtons": {
     "groupButton1": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
-      "iconName": "heart",
+      "iconName": "edit",
       "id": "groupButton1",
       "index": 0,
       "isDisabled": false,
       "isVisible": true,
       "label": "Edit",
       "menuItems": {},
+      "onClick": "{{showModal(mod_editProject.name);}}",
       "placement": "CENTER",
       "widgetId": ""
     },
     "groupButton2": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
-      "iconName": "add",
+      "iconName": "form",
       "id": "groupButton2",
       "index": 1,
       "isDisabled": false,
       "isVisible": true,
       "label": "Create form",
       "menuItems": {},
+      "onClick": "{{navigateTo('Generate Form', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },
     "groupButtondxt4hjcjuj": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
+      "iconName": "info-sign",
       "id": "groupButtondxt4hjcjuj",
       "index": 2,
       "isDisabled": false,
@@ -76,6 +95,7 @@
       "itemType": "BUTTON",
       "label": "Generate overview",
       "menuItems": {},
+      "onClick": "{{navigateTo('Generate Overview', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "jracd8atea"
@@ -83,6 +103,7 @@
     "groupButtonv9cfgqk0e7": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
+      "iconName": "document",
       "id": "groupButtonv9cfgqk0e7",
       "index": 3,
       "isDisabled": false,
@@ -91,6 +112,7 @@
       "itemType": "BUTTON",
       "label": "Generate implementation",
       "menuItems": {},
+      "onClick": "{{navigateTo('Generate Implementation', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "7m5vc95s3u"
@@ -98,6 +120,7 @@
     "groupButtonvs5tf3a1be": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
+      "iconName": "numbered-list",
       "id": "groupButtonvs5tf3a1be",
       "index": 4,
       "isDisabled": false,
@@ -106,15 +129,16 @@
       "itemType": "BUTTON",
       "label": "Generate tickets",
       "menuItems": {},
+      "onClick": "{{navigateTo('Generate Tickets', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "tgvubbjsun"
     }
   },
   "isCanvas": false,
-  "isDisabled": "{{ controller.isOwner()}}",
+  "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{ controller.isOwner()}}",
   "key": "nypl1imw0k",
   "leftColumn": 0,
   "minWidth": 450,
