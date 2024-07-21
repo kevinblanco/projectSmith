@@ -26,6 +26,6 @@
     "fullyQualifiedName": "controller.loadState",
     "name": "loadState",
     "pageId": "Stakeholder Form",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

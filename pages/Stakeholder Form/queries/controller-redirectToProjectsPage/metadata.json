@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "669d15f49c10bf67d9f78ead_24d2c086-bd78-4db6-898f-59d64cad5998",
-  "id": "Stakeholder Form_controller.onLoad",
+  "gitSyncId": "669d15f49c10bf67d9f78ead_4f5b2cb9-039b-457c-ba0b-f642266d0390",
+  "id": "Stakeholder Form_controller.redirectToProjectsPage",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "fullyQualifiedName": "controller.onLoad",
-    "name": "onLoad",
+    "executeOnLoad": false,
+    "fullyQualifiedName": "controller.redirectToProjectsPage",
+    "name": "redirectToProjectsPage",
     "pageId": "Stakeholder Form",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }
