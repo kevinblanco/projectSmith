@@ -2,22 +2,18 @@ export default {
 	async onLoad() {
 		await SelectProjectsByUser.run()
 		state.projects = SelectProjectsByUser.data
-		console.log("STATE PROJECTS:", state.projects)
 
 		const projectId = appsmith.URL.queryParams.project
-		console.log("PROJECT ID:", projectId)
-
 		const project = projectId ? this.findProjectById(projectId) : null
 
 		if (project) {
 			this.isValidProject(project) ? this.setCurrent(project) : this.handleInvalidProject()
 		} else {
 			this.loadState()
-			console.log("LOADED STATE CURRENT:", state.current)
 
 			state.current && this.isValidProject(state.current)
 				? this.saveState()
-				: this.handleInvalidProject()
+			: this.handleInvalidProject()
 		}
 	},
 
@@ -61,6 +57,6 @@ export default {
 	},
 
 	redirectToProjectsPage() {
-		navigateTo('Projects')  // Adjust the navigation based on your app's configuration
+		navigateTo('Projects')
 	}
 }
