@@ -1,5 +1,7 @@
 export default {
+
 	async onLoad() {
+
 		await SelectProjectsByUser.run()
 		state.projects = SelectProjectsByUser.data
 
@@ -15,6 +17,16 @@ export default {
 				? this.saveState()
 			: this.handleInvalidProject()
 		}
+
+		const responsesOnThisProject = await GetResponsesByProject.run({ project: state.current.id })
+		const userEmail = appsmith.user.email
+		const userHasSubmitted = responsesOnThisProject.some(response => response.email === userEmail)
+
+		if (userHasSubmitted) {
+			showModal(AlreadySavedModal.name)
+		}
+
+		this.saveState()
 	},
 
 	findProjectById(projectId) {
@@ -57,6 +69,6 @@ export default {
 	},
 
 	redirectToProjectsPage() {
-		navigateTo('Projects')
+		navigateTo('Projects')  // Adjust the navigation based on your app's configuration
 	}
 }

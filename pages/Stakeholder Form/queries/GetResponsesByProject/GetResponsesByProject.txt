@@ -1,0 +1,2 @@
+SELECT * FROM  public."responses"
+WHERE project = {{appsmith.store.projectsmith.current.id}};
