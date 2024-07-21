@@ -25,6 +25,10 @@
     {
       "id": "Projects",
       "isDefault": true
+    },
+    {
+      "id": "Generate Form",
+      "isDefault": false
     }
   ],
   "unpublishedApplicationDetail": {
