@@ -1,0 +1,28 @@
+{
+  "gitSyncId": "669d15f49c10bf67d9f78ead_fed45f24-4496-4889-ba99-7959fcf778b1",
+  "id": "Stakeholder Form_state",
+  "unpublishedCollection": {
+    "name": "state",
+    "pageId": "Stakeholder Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "currentTab",
+        "value": "\"list\""
+      },
+      {
+        "name": "current",
+        "value": "{}"
+      },
+      {
+        "name": "projects",
+        "value": "{}"
+      },
+      {
+        "name": "responses",
+        "value": "{}"
+      }
+    ]
+  }
+}
