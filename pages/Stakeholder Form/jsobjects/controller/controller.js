@@ -7,30 +7,22 @@ export default {
 		const projectId = appsmith.URL.queryParams.project
 		console.log("PROJECT ID:", projectId)
 
-		if (projectId !== undefined && projectId !== null) {
-			// Try to find the project with the given ID in the SelectUsersByUser
-			const project = state.projects.find(proj => proj.id == projectId)
-			console.log("FOUND PROJECT:", project)
+		const project = projectId ? this.findProjectById(projectId) : null
 
-			if (project) {
-				this.setCurrent(project)
-			} else {
-				console.error("Project not found in the projects list")
-				this.redirectToProjectsPage()
-			}
+		if (project) {
+			this.isValidProject(project) ? this.setCurrent(project) : this.handleInvalidProject()
 		} else {
-			console.log("LOAD STATE BECAUSE THERE IS NO PARAMETER")
-			// Load state from local storage
 			this.loadState()
 			console.log("LOADED STATE CURRENT:", state.current)
 
-			if (!state.current) {
-				console.error("No project found in URL query params or local storage")
-				this.redirectToProjectsPage()
-			}
+			state.current && this.isValidProject(state.current)
+				? this.saveState()
+				: this.handleInvalidProject()
 		}
-		this.saveState()
-		console.log("CURRENT PROJECT STATE", state.current)
+	},
+
+	findProjectById(projectId) {
+		return state.projects.find(proj => proj.id == projectId)
 	},
 
 	setCurrent(project) {
@@ -40,8 +32,12 @@ export default {
 	},
 
 	isOwner() {
-		// Check if the current email is the same as the owner email
 		return appsmith.user.email === state.current.owner
+	},
+
+	isValidProject(project) {
+		const userEmail = appsmith.user.email
+		return project.owner === userEmail || project.stakeholders.includes(userEmail)
 	},
 
 	saveState() {
@@ -59,8 +55,12 @@ export default {
 		removeValue("projectsmith")
 	},
 
+	handleInvalidProject() {
+		console.error("User is not authorized for this project or project not found")
+		this.redirectToProjectsPage()
+	},
+
 	redirectToProjectsPage() {
-		// Redirect user to the projects page or show an error message
 		navigateTo('Projects')  // Adjust the navigation based on your app's configuration
 	}
 }
