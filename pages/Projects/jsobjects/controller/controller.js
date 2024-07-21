@@ -4,16 +4,10 @@ export default {
 		state.projects = SelectProjectsByUser.data
 		this.saveState()
 	},
-	setCurrent(id) {
-		state.currentProject = id
+	setCurrent(project) {
+		state.current = project
 		state.currentTab = "project"
 		this.saveState()
-	},
-	getData(field = "name") {
-		let list = state.projects
-		let id = state.currentProject
-		let project = Object.values(list).find(obj => obj.id === id)
-		return project[field]
 	},
 	isOwner() {
 		// Check if the current email is the same as the owner email
