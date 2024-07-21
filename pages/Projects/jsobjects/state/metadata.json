@@ -8,8 +8,8 @@
     "pluginType": "JS",
     "variables": [
       {
-        "name": "currentProject",
-        "value": "0"
+        "name": "current",
+        "value": "{}"
       },
       {
         "name": "currentTab",

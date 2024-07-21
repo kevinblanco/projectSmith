@@ -41,7 +41,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 50,
   "shouldTruncate": false,
-  "text": "{{moment(controller.getData(\"created_at\").created_at).format('LL')}}",
+  "text": "{{moment(state.current.created_at).format('LL')}}",
   "textAlign": "RIGHT",
   "textColor": "#3f3f46",
   "topRow": 3,

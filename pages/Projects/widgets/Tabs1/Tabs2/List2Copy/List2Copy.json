@@ -98,7 +98,7 @@
   "itemSpacing": "4\n",
   "key": "qm1ukwr1rs",
   "leftColumn": 0,
-  "listData": "{{controller.getData(\"stakeholders\")}}",
+  "listData": "{{state.current.stakeholders}}",
   "mainCanvasId": "gn9oqgt987",
   "mainContainerId": "d1ttl7yu3p",
   "minWidth": 450,

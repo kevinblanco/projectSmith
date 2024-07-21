@@ -1,6 +1,6 @@
 export default {
-	currentProject: 0,
 	currentTab: "list",
+	current: {},
 	projects: {},
 	responses: {},
 }

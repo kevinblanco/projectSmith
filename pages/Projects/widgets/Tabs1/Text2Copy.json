@@ -49,7 +49,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 56,
   "shouldTruncate": false,
-  "text": "{{controller.getData(\"status\")}}",
+  "text": "{{state.current.status}}",
   "textAlign": "RIGHT",
   "textColor": "\n{{ \n  controller.getData(\"status\") === 'open' ? '#eab308' : \n controller.getData(\"status\") === 'completo' ? '#22c55e' : \n  'black' \n}}\n",
   "topRow": 3,
