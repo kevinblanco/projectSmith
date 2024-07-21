@@ -1,5 +1,6 @@
 export default {
 	parseMsg () {
+		if(!getMessages.data?.data.length){return {}};
 		const resp = JSON.parse(getMessages.data?.data[0].content[0].text.value);
 		return _.omit(resp, 'onSubmitValid') ;
 	},

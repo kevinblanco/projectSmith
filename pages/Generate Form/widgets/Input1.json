@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 15,
   "boxShadow": "none",
   "defaultText": "",
   "displayName": "Input",
@@ -58,8 +58,8 @@
     "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
   },
   "onSubmit": "{{addMessage.run().then(() => {\n  JSObject1.checkMessages();\n});}}",
-  "originalBottomRow": 16,
-  "originalTopRow": 6,
+  "originalBottomRow": 15,
+  "originalTopRow": 5,
   "parentColumnSpace": 16.953125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -80,7 +80,7 @@
     "Inputs"
   ],
   "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
-  "topRow": 6,
+  "topRow": 5,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ivzz22bobp",

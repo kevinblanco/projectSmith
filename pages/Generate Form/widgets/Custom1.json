@@ -19,9 +19,17 @@
     },
     {
       "key": "defaultModel"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onResetClick"
@@ -36,7 +44,7 @@
   "isDeprecated": false,
   "isLoading": false,
   "isSearchWildcard": true,
-  "isVisible": true,
+  "isVisible": "{{!JSObject1.parseMsg()}}",
   "key": "iu00bleelp",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -55,7 +63,7 @@
   },
   "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
   "originalBottomRow": 95,
-  "originalTopRow": 24,
+  "originalTopRow": 19,
   "parentColumnSpace": 14.8125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -75,7 +83,7 @@
   ],
   "theme": "{{appsmith.theme}}",
   "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
-  "topRow": 24,
+  "topRow": 19,
   "type": "CUSTOM_WIDGET",
   "uncompiledSrcDoc": {
     "css": "html, body {\n    height: 100%;\n\n}\n\nbody {\n    overflow-y: auto; \n    font-family: Arial, sans-serif; \n    line-height: 1.6; \n\t\tmargin: 10px\n}\n\ninput, textarea {\n\tmargin-right: 8px\n}\n\n.help-block{\n\tfont-size: 0.8em;\n\tcolor: #505967\n}\n\n.form-group> label:first-child {\n\tfont-weight: bold\n}\n\n/* Apply flexbox to the parent container of the checkboxes */\n.form-group .controls > div {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px; \n\t\tmargin-bottom: 20px\n}\n\n/* Style individual checkbox containers */\n.form-group .controls .checkbox {\n    flex: 1 1 calc(33.33% - 20px); /* Adjust the width and spacing */\n    box-sizing: border-box; /* Ensure padding and border are included in the width */\n}\n\n/* Adjust the label inside the checkboxes */\n.form-group .controls .checkbox label {\n    display: flex;\n    align-items: center;\n}\n\n",
