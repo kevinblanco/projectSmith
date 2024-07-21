@@ -1,0 +1,71 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 110,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{{appsmith.store.projectsmith.current.form_json}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "events": [
+    "onSubmit"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "gory94g9kj",
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 49,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 19,
+  "needsErrorInfo": false,
+  "onSubmit": "{{SaveStakeholderForm.run({\n  \"form_response\": StakeholderForm.model.values\n}).then(() => {\n  showAlert('Your Responses has been stored, thank you for your feedback!', 'success');\n  navigateTo('Projects', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Something\\'s off, we couldn\\'t save your changes, please try again!', 'error');\n});}}",
+  "originalBottomRow": 118,
+  "originalTopRow": 19,
+  "parentColumnSpace": 12.359375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "body {\n  padding: 2rem 2.5rem 0 1rem;\n}",
+    "html": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.jsdelivr.net/npm/jsonform@2.2.5/deps/opt/bootstrap.min.css\" />\n  </head>\n  <body>\n    <form></form>\n    <div id=\"res\" class=\"alert\"></div>\n    <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js\"></script>\n    <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-min.min.js\"></script>\n    <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/JSV@4.0.2/lib/jsv.min.js\"></script>\n    <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/jsonform@2.2.5/lib/jsonform.min.js\"></script>\n  \n  </body>\n</html>",
+    "js": "appsmith.onReady(() => {\n  $('form').jsonForm({\n    schema: appsmith.model.schema,\n    onSubmit: function (errors, values) {\n      if (errors) {\n        $('#res').html('<p>I beg your pardon?</p>');\n      } else {\n        appsmith.updateModel({\n          values: values\n        });\n        appsmith.triggerEvent(\"onSubmit\");\n      }\n    }\n  });\n});\nappsmith.onModelChange(() => {\n  if (!appsmith.model.schema) {\n    return;\n  }\n  $('form').empty();\n  $('form').jsonForm({\n    schema: appsmith.model.schema,\n    onSubmit: function (errors, values) {\n      if (errors) {\n        $('#res').html('<p>I beg your pardon?</p>');\n      } else {\n        appsmith.updateModel({\n          values: values\n        });\n        appsmith.triggerEvent(\"onSubmit\");\n      }\n    }\n  });\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 19,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "body {\n\tpadding: 2rem 2.5rem 0 1rem;\n}",
+    "html": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"utf-8\" />\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"https://cdn.jsdelivr.net/npm/jsonform@2.2.5/deps/opt/bootstrap.min.css\" />\n  </head>\n  <body>\n    <form></form>\n    <div id=\"res\" class=\"alert\"></div>\n    <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js\"></script>\n    <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-min.min.js\"></script>\n    <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/JSV@4.0.2/lib/jsv.min.js\"></script>\n    <script type=\"text/javascript\" src=\"https://cdn.jsdelivr.net/npm/jsonform@2.2.5/lib/jsonform.min.js\"></script>\n  \n  </body>\n</html>",
+    "js": "appsmith.onReady(() =>{\n\n\t$('form').jsonForm({\n\t\tschema: appsmith.model.schema,\n\t\tonSubmit: function (errors, values) {\n\t\t\tif (errors) {\n\t\t\t\t$('#res').html('<p>I beg your pardon?</p>');\n\t\t\t}\n\t\t\telse {\n\t\t\t\tappsmith.updateModel({values:values})\n\t\t\t\tappsmith.triggerEvent(\"onSubmit\");\n\t\t\t}\n\t\t}\n\t});\n})\n\nappsmith.onModelChange(()=>{\n\t if(!appsmith.model.schema){return}\n   $('form').empty()\n\t\n\t$('form').jsonForm({\n\t\tschema: appsmith.model.schema,\n\t\tonSubmit: function (errors, values) {\n\t\t\tif (errors) {\n\t\t\t\t$('#res').html('<p>I beg your pardon?</p>');\n\t\t\t}\n\t\t\telse {\n\t\t\t\tappsmith.updateModel({values:values})\n\t\t\t\tappsmith.triggerEvent(\"onSubmit\");\n\t\t\t}\n\t\t}\n\t});\n})\n"
+  },
+  "version": 1,
+  "widgetId": "6ugtaqcy4s",
+  "widgetName": "StakeholderForm"
+}
