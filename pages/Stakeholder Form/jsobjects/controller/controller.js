@@ -18,8 +18,6 @@ export default {
 		const responsesOnThisProject = await GetResponsesByProject.run({ project: state.current.id })
 		const userEmail = appsmith.user.email
 		const userHasSubmitted = responsesOnThisProject.some(response => response.email === userEmail)
-		console.log("responses on this project", responsesOnThisProject)
-		console.log("userhas submited?", userHasSubmitted)
 
 		if (userHasSubmitted) {
 			showModal(AlreadySavedModal.name)
