@@ -44,7 +44,7 @@
   "isDeprecated": false,
   "isLoading": false,
   "isSearchWildcard": true,
-  "isVisible": "{{!JSObject1.parseMsg()}}",
+  "isVisible": "{{!!JSObject1.parseMsg()}}",
   "key": "iu00bleelp",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
