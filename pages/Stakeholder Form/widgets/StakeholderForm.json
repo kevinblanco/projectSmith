@@ -3,7 +3,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 118,
+  "bottomRow": 110,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "defaultModel": "{{appsmith.store.projectsmith.current.form_json}}",
   "dynamicBindingPathList": [
@@ -44,7 +44,7 @@
   "mobileTopRow": 19,
   "needsErrorInfo": false,
   "onSubmit": "{{SaveStakeholderForm.run({\n  \"form_response\": StakeholderForm.model.values\n}).then(() => {\n  showAlert('Your Responses has been stored, thank you for your feedback!', 'success');\n  navigateTo('Projects', {}, 'SAME_WINDOW');\n}).catch(() => {\n  showAlert('Something\\'s off, we couldn\\'t save your changes, please try again!', 'error');\n});}}",
-  "originalBottomRow": 110,
+  "originalBottomRow": 118,
   "originalTopRow": 19,
   "parentColumnSpace": 12.359375,
   "parentId": "0",
