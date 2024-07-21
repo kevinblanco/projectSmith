@@ -3,56 +3,86 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 11,
   "boxShadow": "none",
   "defaultText": "",
+  "displayName": "Input",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "labelTextColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "hideCard": false,
   "iconAlign": "left",
+  "iconSVG": "/static/media/icon.f4dd498ee72f01127e5bfe3a1a8ad671.svg",
   "inputType": "MULTI_LINE_TEXT",
+  "isDeprecated": false,
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "kec24sm5qi",
-  "label": "Prompt",
+  "key": "deqe23j8b4",
+  "label": "Describe the app you want to build. Continue adding new prompts to customize the form. ",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "",
+  "labelStyle": "BOLD",
+  "labelTextColor": "{{appsmith.theme.colors.primaryColor}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 11,
-  "mobileLeftColumn": 10,
-  "mobileRightColumn": 30,
-  "mobileTopRow": 4,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 19,
-  "originalTopRow": 4,
-  "parentColumnSpace": 8.953125,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--on-canvas-ui-widget-focus",
+    "focusColorCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionBGCSSVar": "--on-canvas-ui-widget-selection",
+    "selectionColorCSSVar": "--on-canvas-ui-widget-focus"
+  },
+  "onSubmit": "{{addMessage.run().then(() => {\n  JSObject1.checkMessages();\n});}}",
+  "originalBottomRow": 11,
+  "originalTopRow": 1,
+  "parentColumnSpace": 16.953125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 62,
+  "searchTags": [
+    "form",
+    "text input",
+    "number",
+    "textarea"
+  ],
   "shouldAllowAutofill": false,
-  "shouldScrollContents": true,
   "showStepArrows": false,
-  "topRow": 4,
+  "tags": [
+    "Suggested",
+    "Inputs"
+  ],
+  "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.a4eac1a16753ea7fc54cac7731f9ea6a.svg",
+  "topRow": 1,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "pa57h1vebe",
+  "widgetId": "ivzz22bobp",
   "widgetName": "Input1"
 }
