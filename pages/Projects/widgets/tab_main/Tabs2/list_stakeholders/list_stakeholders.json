@@ -8,13 +8,13 @@
   ],
   "animateLoading": true,
   "backgroundColor": "",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 55,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "borderRadius": "0px",
+  "bottomRow": 47,
+  "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 510,
+      "bottomRow": 430,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -76,16 +76,15 @@
       "key": "accentColor"
     },
     {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
-    },
-    {
       "key": "listData"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "primaryKeys"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "enhancements": true,
   "flexVerticalAlignment": "start",
@@ -95,10 +94,10 @@
   "isLoading": false,
   "isVisible": true,
   "itemBackgroundColor": "#FFFFFF",
-  "itemSpacing": "4\n",
+  "itemSpacing": "6",
   "key": "qm1ukwr1rs",
   "leftColumn": 0,
-  "listData": "{{state.current.stakeholders}}",
+  "listData": "{{state.current.responses}}",
   "mainCanvasId": "gn9oqgt987",
   "mainContainerId": "d1ttl7yu3p",
   "minWidth": 450,
@@ -107,20 +106,20 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
-  "pageSize": 10,
+  "pageSize": 7,
   "parentColumnSpace": 10.956298828125,
   "parentId": "7s1wa3pj06",
   "parentRowSpace": 10,
-  "primaryKeys": "{{List2Copy.listData.map((currentItem, currentIndex) => currentItem[\"id\"] )}}",
+  "primaryKeys": "{{list_stakeholders.listData.map((currentItem, currentIndex) => currentItem[\"email\"] )}}",
   "renderMode": "CANVAS",
   "requiresFlatWidgetChildren": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 62,
+  "rightColumn": 64,
   "selectedItemView": "{{{}}}",
   "templateHeight": 160,
   "topRow": 4,
   "triggeredItemView": "{{{}}}",
   "type": "LIST_WIDGET_V2",
   "widgetId": "q9c2aor5j4",
-  "widgetName": "List2Copy"
+  "widgetName": "list_stakeholders"
 }
