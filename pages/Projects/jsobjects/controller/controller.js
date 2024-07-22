@@ -50,6 +50,7 @@ export default {
 		} else {
 			state.currentTab = "list";
 			state.current = {};
+			this.saveState();
 		}
 	},
 

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 4,
   "boxShadow": "none",
   "dynamicBindingPathList": [
     {
@@ -41,7 +41,7 @@
   "parentId": "zt5fuypmjl",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 45,
+  "rightColumn": 14,
   "shouldTruncate": false,
   "text": "{{currentItem.email}}",
   "textAlign": "LEFT",
@@ -52,5 +52,5 @@
   "type": "TEXT_WIDGET",
   "version": 1,
   "widgetId": "ycqrx1oyba",
-  "widgetName": "Text5Copy"
+  "widgetName": "txt_stakeholderEmail"
 }
