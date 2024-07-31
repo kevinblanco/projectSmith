@@ -297,7 +297,7 @@
   "mobileTopRow": 22,
   "needsErrorInfo": false,
   "onSubmit": "{{projectUpdate.run({\n  \"id\": appsmith.store.project.id\n}).then(() => {\n  showAlert('Project updated!', 'success');\n}).catch(() => {\n  showAlert('There was a problem updating the project.', 'error');\n});}}",
-  "originalBottomRow": 87,
+  "originalBottomRow": 89,
   "originalTopRow": 4,
   "parentColumnSpace": 8.0126953125,
   "parentId": "jqueu4zey5",
@@ -529,8 +529,7 @@
                   "label": "Comments",
                   "labelTextSize": "0.875rem",
                   "originalIdentifier": "comments",
-                  "position": 4,
-                  "sourceData": null
+                  "position": 4
                 },
                 "created_at": {
                   "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(form_editProject.sourceData, form_editProject.formData, form_editProject.fieldState)}}",
@@ -649,7 +648,6 @@
               "position": -1,
               "sourceData": {
                 "approved": false,
-                "comments": null,
                 "created_at": "2024-07-21T16:51:38.313101Z",
                 "email": "joseph@appsmith.com",
                 "form_response": false,
@@ -674,7 +672,6 @@
           "sourceData": [
             {
               "approved": false,
-              "comments": null,
               "created_at": "2024-07-21T16:51:38.313101Z",
               "email": "kevin@appsmith.com",
               "form_response": true,
@@ -683,7 +680,6 @@
             },
             {
               "approved": false,
-              "comments": null,
               "email": "joseph@appsmith.com",
               "form_response": false,
               "project": 0
