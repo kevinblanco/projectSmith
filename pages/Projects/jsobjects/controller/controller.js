@@ -59,24 +59,25 @@ export default {
 	/**
 	 * Creates a new project and closes the add project modal.
 	 */
-	projectCreate() {
-		projectInsert.run();
+	async projectCreate() {
+		await projectInsert.run();
 		closeModal(mod_addProject.name);
 	},
 
 	/**
 	 * Updates the current project and closes the edit project modal.
 	 */
-	projectUpdate() {
-		projectUpdate.run();
+	async projectUpdate() {
+		await projectUpdate.run();
 		closeModal(mod_editProject.name);
+		await projectSelectAll.run();
 	},
 
 	/**
 	 * Deletes the current project and closes the delete project modal.
 	 */
-	projectDelete() {
-		projectDelete.run();
+	async projectDelete() {
+		await projectDelete.run();
 		closeModal(mod_deleteProject);
 	},
 
