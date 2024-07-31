@@ -47,7 +47,7 @@
       "rightColumn": 454.5,
       "shouldScrollContents": false,
       "tabId": "tab1",
-      "tabName": "Stakeholders",
+      "tabName": "stakeholders",
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -231,7 +231,7 @@
       "id": "tab1",
       "index": 0,
       "isVisible": true,
-      "label": "Stakeholders",
+      "label": "stakeholders",
       "positioning": "vertical",
       "widgetId": "7s1wa3pj06"
     },
@@ -262,5 +262,5 @@
   "type": "TABS_WIDGET",
   "version": 3,
   "widgetId": "ovlq508bom",
-  "widgetName": "Tabs2"
+  "widgetName": "tab_projectInfo"
 }

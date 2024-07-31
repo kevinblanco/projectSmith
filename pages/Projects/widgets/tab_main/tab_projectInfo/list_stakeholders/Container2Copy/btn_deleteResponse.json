@@ -3,28 +3,36 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "buttonColor": "#eab308",
+  "buttonColor": "#b91c1c",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "iconName": "form",
+  "iconName": "trash",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{controller.isOwner() && currentItem.form_response}}",
   "key": "bey258b74b",
-  "leftColumn": 49,
+  "leftColumn": 33,
   "minWidth": 120,
   "mobileBottomRow": 4,
-  "mobileLeftColumn": 34,
-  "mobileRightColumn": 50,
+  "mobileLeftColumn": 33,
+  "mobileRightColumn": 49,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "parentColumnSpace": 17.855224609375,
@@ -35,11 +43,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 57,
-  "text": "Give input",
+  "rightColumn": 42,
+  "text": "Delete response",
   "topRow": 0,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "hkznuzvmf5",
-  "widgetName": "Button3"
+  "widgetId": "xm25dnrx5u",
+  "widgetName": "btn_deleteResponse"
 }
