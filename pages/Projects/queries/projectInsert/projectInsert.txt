@@ -1,0 +1,10 @@
+INSERT INTO public."projects" (
+	"owner",
+	"name",
+	"stakeholders",
+	"intake")
+VALUES (
+	'{{appsmith.user.email}}',
+	'{{form_newProject.formData.name}}',
+	'{{form_newProject.formData.stakeholders}}',
+	'{{form_newProject.formData.intake}}');

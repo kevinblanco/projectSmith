@@ -1,0 +1,2 @@
+INSERT INTO public."responses" (project, email, form_response, approved)
+VALUES ({{appsmith.store.projectsmith.current.id}}, {{appsmith.user.email}}, {{this.params.form_response}}, false);

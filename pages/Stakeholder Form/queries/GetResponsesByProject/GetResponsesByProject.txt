@@ -1,0 +1,2 @@
+SELECT * FROM  public."responses"
+WHERE project = {{this.params.project}};

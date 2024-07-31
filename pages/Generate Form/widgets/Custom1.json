@@ -1,0 +1,96 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 95,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "defaultModel": "{{\n{ \n\tformConfig: JSObject1.parseMsg(),\n\tlastEdit: 'user'\n}\n}}",
+  "displayName": "Custom",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onResetClick"
+    }
+  ],
+  "events": [
+    "onResetClick"
+  ],
+  "hideCard": false,
+  "iconSVG": "https://appcdn.appsmith.com/static/media/icon.ff37253a5ce2f5284c42ede26ce165f9.svg",
+  "isCanvas": false,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": "{{!!JSObject1.parseMsg()}}",
+  "key": "iu00bleelp",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 35,
+  "mobileLeftColumn": 42,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "onCanvasUI": {
+    "disableParentSelection": false,
+    "focusBGCSSVar": "--ads-widget-focus",
+    "focusColorCSSVar": "--ads-widget-selection",
+    "selectionBGCSSVar": "--ads-widget-selection",
+    "selectionColorCSSVar": "--ads-widget-focus"
+  },
+  "onResetClick": "{{showAlert('Successfully reset!!', '');}}",
+  "originalBottomRow": 95,
+  "originalTopRow": 19,
+  "parentColumnSpace": 14.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 64,
+  "searchTags": [
+    "external"
+  ],
+  "shouldScrollContents": true,
+  "srcDoc": {
+    "css": "html, body {\n  height: 100%;\n}\n\nbody {\n  overflow-y: auto;\n  font-family: Arial, sans-serif;\n  line-height: 1.6;\n  margin: 10px;\n}\n\ninput, textarea {\n  margin-right: 8px;\n}\n\n.help-block {\n  font-size: 0.8em;\n  color: #505967;\n}\n\n.form-group > label:first-child {\n  font-weight: bold;\n}\n\n/* Apply flexbox to the parent container of the checkboxes */\n.form-group .controls > div {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 10px;\n  margin-bottom: 20px;\n}\n\n/* Style individual checkbox containers */\n.form-group .controls .checkbox {\n  flex: 1 1 calc(33.33% - 20px); /* Adjust the width and spacing */\n  box-sizing: border-box; /* Ensure padding and border are included in the width */\n}\n\n/* Adjust the label inside the checkboxes */\n.form-group .controls .checkbox label {\n  display: flex;\n  align-items: center;\n}",
+    "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\" />\n    <title>Auto-generate forms from AI</title>\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\">\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.min.js\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/JSV@4.0.2/lib/jsv.min.js\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/jsonform@2.2.5/lib/jsonform.min.js\"></script>\n</head>\n<body>\n    <form></form>\n    <div id=\"res\" class=\"alert\"></div>\n</body>\n</html>\n",
+    "js": "import jsonform from 'https://cdn.jsdelivr.net/npm/jsonform@2.2.5/+esm';\nfunction saveForm(errors, values) {\n  if (appsmith.model.lastEdit === 'user') {\n    return;\n  }\n  if (errors) {\n    $('#res').html('<p>There was an error in the form submission.</p>');\n  } else {\n    appsmith.updateModel({\n      values: values\n    });\n    $('#res').html('<p>Form submitted successfully!</p>');\n  }\n}\nappsmith.onReady(() => {\n  const formConfig = appsmith.model.formConfig;\n  appsmith.updateModel({\n    lastEdit: 'system'\n  });\n  $('form').jsonForm({\n    schema: formConfig.schema,\n    form: formConfig.form,\n    onSubmit: saveForm\n  });\n});\nappsmith.onModelChange(() => {\n  const formConfig = appsmith.model.formConfig;\n  $('form').empty();\n  $('form').jsonForm({\n    schema: formConfig.schema,\n    form: formConfig.form,\n    onSubmit: saveForm\n  });\n});"
+  },
+  "tags": [
+    "Display"
+  ],
+  "theme": "{{appsmith.theme}}",
+  "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.a7d7cde44fad9a0d4d490def43560a78.svg",
+  "topRow": 19,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "html, body {\n    height: 100%;\n\n}\n\nbody {\n    overflow-y: auto; \n    font-family: Arial, sans-serif; \n    line-height: 1.6; \n\t\tmargin: 10px\n}\n\ninput, textarea {\n\tmargin-right: 8px\n}\n\n.help-block{\n\tfont-size: 0.8em;\n\tcolor: #505967\n}\n\n.form-group> label:first-child {\n\tfont-weight: bold\n}\n\n/* Apply flexbox to the parent container of the checkboxes */\n.form-group .controls > div {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px; \n\t\tmargin-bottom: 20px\n}\n\n/* Style individual checkbox containers */\n.form-group .controls .checkbox {\n    flex: 1 1 calc(33.33% - 20px); /* Adjust the width and spacing */\n    box-sizing: border-box; /* Ensure padding and border are included in the width */\n}\n\n/* Adjust the label inside the checkboxes */\n.form-group .controls .checkbox label {\n    display: flex;\n    align-items: center;\n}\n\n",
+    "html": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"utf-8\" />\n    <title>Auto-generate forms from AI</title>\n    <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\">\n    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.min.js\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/JSV@4.0.2/lib/jsv.min.js\"></script>\n    <script src=\"https://cdn.jsdelivr.net/npm/jsonform@2.2.5/lib/jsonform.min.js\"></script>\n</head>\n<body>\n    <form></form>\n    <div id=\"res\" class=\"alert\"></div>\n</body>\n</html>\n",
+    "js": "import jsonform from 'https://cdn.jsdelivr.net/npm/jsonform@2.2.5/+esm';\n\nfunction saveForm(errors, values) {\n\tif(appsmith.model.lastEdit === 'user'){return}\n\tif (errors) {\n\t\t$('#res').html('<p>There was an error in the form submission.</p>');\n\t} else {\n\t\tappsmith.updateModel({ values: values });\n\t\t$('#res').html('<p>Form submitted successfully!</p>');\n\t}\n}\n\nappsmith.onReady(() => {\n\n\tconst formConfig = appsmith.model.formConfig\n  appsmith.updateModel({lastEdit:'system'})\n\t$('form').jsonForm({\n\t\tschema: formConfig.schema,\n\t\tform: formConfig.form,\n\t\tonSubmit: saveForm\n\t});\n});\n\nappsmith.onModelChange(() => {\n\tconst formConfig = appsmith.model.formConfig\n\n\t$('form').empty();\n\t$('form').jsonForm({\n\t\tschema: formConfig.schema,\n\t\tform: formConfig.form,\n\t\tonSubmit: saveForm\n\t});\n});"
+  },
+  "version": 1,
+  "widgetId": "6pnk9jltg8",
+  "widgetName": "Custom1"
+}

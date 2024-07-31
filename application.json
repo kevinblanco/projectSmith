@@ -1,5 +1,8 @@
 {
   "appIsExample": false,
+  "appLayout": {
+    "type": "DESKTOP"
+  },
   "applicationDetail": {
     "appPositioning": {
       "type": "FIXED"
@@ -12,7 +15,7 @@
       "navStyle": "stacked",
       "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": true
     }
   },
@@ -25,8 +28,31 @@
     {
       "id": "Projects",
       "isDefault": true
+    },
+    {
+      "id": "Generate Form",
+      "isDefault": false
+    },
+    {
+      "id": "Generate Overview",
+      "isDefault": false
+    },
+    {
+      "id": "Generate Implementation",
+      "isDefault": false
+    },
+    {
+      "id": "Generate Tickets",
+      "isDefault": false
+    },
+    {
+      "id": "Stakeholder Form",
+      "isDefault": false
     }
   ],
+  "unpublishedAppLayout": {
+    "type": "DESKTOP"
+  },
   "unpublishedApplicationDetail": {
     "appPositioning": {
       "type": "FIXED"
@@ -39,7 +65,7 @@
       "navStyle": "stacked",
       "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": true
     }
   }

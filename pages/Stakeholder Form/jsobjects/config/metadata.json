@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "669d15f49c10bf67d9f78ead_e954826e-ff51-4906-9458-c180f83eff89",
+  "id": "Stakeholder Form_config",
+  "unpublishedCollection": {
+    "name": "config",
+    "pageId": "Stakeholder Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "appid",
+        "value": "\"projectsmith\""
+      }
+    ]
+  }
+}

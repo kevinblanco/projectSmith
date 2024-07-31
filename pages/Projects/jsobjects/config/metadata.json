@@ -1,0 +1,24 @@
+{
+  "gitSyncId": "669bca809c10bf67d9f78c9d_c6cdf366-b565-40e4-b55f-8c7f4a09a0f8",
+  "id": "Projects_config",
+  "unpublishedCollection": {
+    "name": "config",
+    "pageId": "Projects",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "appid",
+        "value": "\"projectsmith\""
+      },
+      {
+        "name": "status",
+        "value": "[{\n  value: \"open\",\n  label: \"Open\"\n}, {\n  value: \"closed\",\n  label: \"Closed\"\n}, {\n  value: \"inProgress\",\n  label: \"In progress\"\n}, {\n  value: \"waitingFeedback\",\n  label: \"Waiting on feedback\"\n}, {\n  value: \"waitingApproval\",\n  label: \"Waiting on approval\"\n}]"
+      },
+      {
+        "name": "defaultResponse",
+        "value": "{\n  \"project\": 0,\n  \"email\": \"\",\n  \"form_response\": false,\n  \"approved\": false,\n  \"comments\": null\n}"
+      }
+    ]
+  }
+}

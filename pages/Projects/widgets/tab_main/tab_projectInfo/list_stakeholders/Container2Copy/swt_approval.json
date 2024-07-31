@@ -1,0 +1,46 @@
+{
+  "accentColor": "#22c55e",
+  "alignWidget": "RIGHT",
+  "animateLoading": true,
+  "bottomRow": 4,
+  "boxShadow": "none",
+  "defaultSwitchState": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": "{{!(currentItem.form_response && state.current.overview.length)}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "cjpupzao8u",
+  "label": "Approved",
+  "labelPosition": "Left",
+  "labelStyle": "BOLD",
+  "leftColumn": 57,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 49,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 17.855224609375,
+  "parentId": "zt5fuypmjl",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "pp9x0k6tkq",
+  "widgetName": "swt_approval"
+}
